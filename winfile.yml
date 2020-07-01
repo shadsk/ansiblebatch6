@@ -1,0 +1,10 @@
+- hosts: windows
+  tasks:
+  - name: create directory
+    win_file:
+      path: c:\temp
+      state: directory
+  - name: create file
+    file:
+      path: c:\temp\testfile
+      state: touch 

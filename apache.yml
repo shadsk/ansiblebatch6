@@ -1,5 +1,4 @@
-- hosts: linux
-  become: yes
+- hosts: linux  
   tasks:
   - name: install apache on ubuntu
     apt:

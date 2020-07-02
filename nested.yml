@@ -1,4 +1,4 @@
-- hosts: 172.31.36.218
+- hosts: linux
   tasks:
   - name: execute echo command
     debug: msg=" ansible {{ item[0] }} on day {{ item[1] }} is {{ item [2] }}"
